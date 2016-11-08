@@ -1,0 +1,14 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.l-content{
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.l-footer{
+    flex: none;
+}

@@ -165,7 +165,7 @@ gulp.task('browsersync', function () {
 });
 
 // Build Task
-gulp.task('build', ['sass', 'jade', 'js', 'images', 'vendors', 'favicon']);
+gulp.task('build', ['sass', /*'jade',*/ 'js', 'images', 'vendors', 'favicon']);
 
 // Watch Task
 gulp.task('watch', ['browsersync'], function () {
