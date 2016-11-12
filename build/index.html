@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <title>WCAD Solution Support Center</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico"/>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+  <div class="l-content">
+    <header role="banner" class="l-header navigation">
+      <div class="navigation-wrapper">
+       <a href="javascript:void(0)" class="logo">
+         <img src="assets/img/logo.png" height="60" alt="Logo Image">
+       </a>
+       <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+       <div class="navigation-tools">
+         <div class="search-bar">
+           <form role="search">
+             <input type="search" placeholder="Enter Search" />
+             <button type="submit">
+                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+             </button>
+           </form>
+         </div>
+        </div>
+       <nav role="navigation" class="navigation-right">
+         <ul id="js-navigation-menu" class="navigation-menu">
+           <li class="nav-link"><a href="javascript:void(0)">Change password</a></li>
+           <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">Logout <span class="c-user__name">Martin</span>&#160;<span class="c-user__lastname">Bartek</span></a>
+             <ul class="submenu">
+               <li><a href="javascript:void(0)">Submenu Item</a></li>
+               <li><a href="javascript:void(0)">Another Item</a></li>
+               <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+                 <ul class="submenu">
+                   <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                   <li><a href="javascript:void(0)">Another Item</a></li>
+                 </ul>
+               </li>
+               <li class="more"><a href="javascript:void(0)">Another submenu</a>
+                 <ul class="submenu">
+                   <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                   <li><a href="javascript:void(0)">An Item</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </nav>
+      </div></header>
+    <main class="l-mainContent">
+      <div class="c-mainContent">
+        <div class="l-mainContent__top">
+          <div class="l-mainContent__topLeft">
+            <h1 class="c-mainContent__title">
+              <Solution>support center</Solution>
+            </h1>
+            <nav class="c-support">
+              <ul class="c-support__contacts">
+                <li class="c-support__contact">In case of problems, please contact<span class="c-support__contact_important">Support Hotline</span></li>
+                <li class="c-support__contact"><a href="tel:+49123456789" class="c-support__link c-support__link_phone">+49 123 456 789</a></li>
+                <li class="c-support__contact">                   <a href="mail-to:support@digitalcustomership.de" class="c-support__link c-support__link_email">support@digitalcustomership.de</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="l-mainContent__topRight"></div>
+        </div>
+        <div class="l-mainContent__bottom">
+          <div class="l-mainContent__table"> 
+            <div class="c-filter">
+              <div class="l-filter__search">
+                <div class="c-filter__search">
+                  <!-- START _searchBar Component--><form class="search-bar" role="search">
+                    <input type="search" placeholder="Enter Search" />
+                    <button type="submit">
+                      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png" alt="Search Icon">
+                    </button>
+                  </form>
+                  <!--END _searchBar Component-->
+                </div>
+              </div>
+            </div>
+            <div class="l-dataTable">     
+              <table class="c-dataTable">
+                <thead class="c-dataTable__header">
+                  <tr class="c-dataTable__headerTitles">
+                    <th class="c-dataTable__headerCell c-dataTable__contract">Contract</th>
+                    <th class="c-dataTable__headerCell c-dataTable__ticket">Ticket #</th>
+                    <th class="c-dataTable__headerCell c-dataTable__customerTicket">Customer ticket #</th>
+                    <th class="c-dataTable__headerCell c-dataTable__title">Title</th>
+                    <th class="c-dataTable__headerCell c-dataTable__creator">Created by</th>
+                    <th class="c-dataTable__headerCell c-dataTable__status">Status Reason</th>
+                    <th class="c-dataTable__headerCell c-dataTable__priority">Priority</th>
+                    <th class="c-dataTable__headerCell c-dataTable__createdDate">Created on</th>
+                    <th class="c-dataTable__headerCell c-dataTable__modified-closed">Modified on / Closed on</th>
+                    <th class="c-dataTable__headerCell c-dataTable__description">Description</th>
+                  </tr>
+                  <tr class="c-dataTable__headerFilters">
+                    <th class="c-dataTable__headerCell c-dataTable__contract"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__ticket"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__customerTicket"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__title"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__creator"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__status"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__priority"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__createdDate"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component--><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__modified-closed"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component--><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                    <th class="c-dataTable__headerCell c-dataTable__description"><!--START DropDown Component-->
+<div class="dropdown">
+  <div class="dropdown-container">
+    <!--<p class="dropdown-description"> Optional Description</p>
+    -->
+    <p class="dropdown-button">Choose</p>
+    <ul class="dropdown-menu dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!--END DropDown Component-->
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="c-datatable__body">
+                  <tr class="c-dataTable__item">
+                    <td class="c-dataTable__bodyCell c-dataTable__contract">Test contract</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__ticket">CAS-004456369</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__customerTicket">25668884455565</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__title">PC does not start</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__creator">Martin Bartek</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__status">Status Researching</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__priority">High</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__createdDate">01/11/2016 <span class="c-dataTable__createdTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__modified-closed"> 01/11/2016 <span class="c-dataTable__modified-closedTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__description">Description</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="c-dataTable__headerTitles">
+                    <th class="c-dataTable__headerCell c-dataTable__contract">Contract</th>
+                    <th class="c-dataTable__headerCell c-dataTable__ticket">Ticket #</th>
+                    <th class="c-dataTable__headerCell c-dataTable__customerTicket">Customer ticket #</th>
+                    <th class="c-dataTable__headerCell c-dataTable__title">Title</th>
+                    <th class="c-dataTable__headerCell c-dataTable__creator">Created by</th>
+                    <th class="c-dataTable__headerCell c-dataTable__status">Status Reason</th>
+                    <th class="c-dataTable__headerCell c-dataTable__priority">Priority</th>
+                    <th class="c-dataTable__headerCell c-dataTable__createdDate">Created on</th>
+                    <th class="c-dataTable__headerCell c-dataTable__modified-closed">Modified on / Closed on</th>
+                    <th class="c-dataTable__headerCell c-dataTable__description">Description</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="l-pagination"><!--// START _pagination Component-->
+<div class="pagination">
+  <ul>
+    <li class="page-prev"><a href="javascript:void(0)">Prev</a></li>
+    <li>
+      <ul>
+        <li><a href="javascript:void(0)">1</a></li>
+        <li><a href="javascript:void(0)">2</a></li>
+        <li><a href="javascript:void(0)">3</a></li>
+        <li><a href="javascript:void(0)">4</a></li>
+        <li><a href="javascript:void(0)">5</a></li>
+        <li><a href="javascript:void(0)">6</a></li>
+        <li><a href="javascript:void(0)">7</a></li>
+      </ul>
+    </li>
+    <li class="page-next"><a href="javascript:void(0)">Next</a></li>
+  </ul>
+</div>
+<!--// END _pagination Component-->
+            </div>
+          </div>
+          <div class="l-mainContent__actions">
+            <div class="c-filter">
+              <button class="c-filter__button">My Case List</button>
+              <button class="c-filter__button">30 Days Old Cases Only</button>
+              <button class="c-filter__button">Reset Filter Criteria</button>
+              <button class="c-filter__button">Refresh Table</button>
+              <button class="c-filter__button c-filter__button_invert">Create Table</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="l-footer">
+    <!-- START _footer Component-->footer
+    <!--img(src="assets/img/fake-footer.jpg")  -->
+    <!-- END _footer Component-->
+  </footer>
+</body>

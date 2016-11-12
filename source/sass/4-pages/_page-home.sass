@@ -1,0 +1,56 @@
+
+body
+  display: flex
+  flex-direction: column
+  height: 100vh
+header.navigation nav
+.l-content
+  flex-basis: auto
+  flex-grow: 1
+  flex-shrink: 0
+  background: $yellow
+.l-footer
+  flex: none
+  background: $black
+  min-height: 100px
+.l-filter
+  &__search
+    @include span-columns(2)
+.l-pagination
+  clear: both
+  margin: $gutter 0
+.l-pagination,    
+.l-dataTable      
+  @include span-columns(12)
+.navigation-wrapper
+  @include outer-container
+.l-mainContent
+  @include outer-container
+  &__top
+    @include span-columns(12)
+    /*@include flex-grow(1)  */
+    &Right
+      @include span-columns(2)
+      /*@include flex-grow(1)*/
+    &Left
+      @include span-columns(10)
+      background: $white
+      /*@include flex-grow(1)*/
+  &__bottom
+    @include span-columns(12)
+    @include display(flex) 
+    @include align-items(stretch)
+  &__table
+    @include span-columns(10)
+    background: $white
+    @include flex-grow(1)
+    width: 100%
+  &__actions
+    @include span-columns(2)
+    @include flex-shrink(0)
+.c-mainContent
+  /*@include display(flex)*/ 
+  /*@include align-items(stretch)*/
+  /*@include flex-wrap(wrap)*/
+  &__title
+    text-align: center

@@ -20,6 +20,7 @@
   "devDependencies": {
     "browser-sync": "^2.7.11",
     "del": "^1.2.0",
+    "eyeglass": "^1.1.2",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.5.2",
     "gulp-deporder": "^1.1.0",
@@ -38,6 +39,7 @@
     "jshint-stylish": "^2.0.1"
   },
   "dependencies": {
+    "bourbon-neat": "^1.8.0",
     "gulp-install": "^0.6.0"
   }
 }

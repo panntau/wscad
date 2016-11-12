@@ -149,10 +149,11 @@ gulp.task('jade', function () {
 gulp.task('sass', function () {
   log('-> Compile SASS Styles')
   return gulp.src(styles.in)
+    //.pipe(sourcemaps.init())
     .pipe($.plumber())
     .pipe($.sass(styles.sassOpt))
     .pipe($.size({ title: 'styles In Size' }))
-    .pipe($.pleeease(styles.pleeeaseOpt))
+    //.pipe($.pleeease(styles.pleeeaseOpt))
     .pipe($.size({ title: 'styles Out Size' }))
     .pipe(gulp.dest(styles.out))
     .pipe(browsersync.reload({ stream: true }));
@@ -165,7 +166,7 @@ gulp.task('browsersync', function () {
 });
 
 // Build Task
-gulp.task('build', ['sass', /*'jade',*/ 'js', 'images', 'vendors', 'favicon']);
+gulp.task('build', ['sass', 'jade', 'js', 'images', 'vendors', 'favicon']);
 
 // Watch Task
 gulp.task('watch', ['browsersync'], function () {
@@ -216,4 +217,3 @@ gulp.task('default', ['help']);
  function log(msg) {
    console.log(msg);
 }
-
