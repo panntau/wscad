@@ -1,5 +1,4 @@
-.c-filter
-  &__button,
+.button
     display: inline-block
     min-height: 38px
     padding: 0 10px
@@ -17,8 +16,9 @@
     cursor: pointer
     box-sizing: border-box
     margin-bottom: $gutter-half
-    @include span-columns(12)
-
+    @include display(flex)
+    @include align-items(center)
+    @include justify-content(center)  
     &:hover,
     &:active,
     &:focus
@@ -35,3 +35,6 @@
         color: $black
         outline: 0
         background: transparent
+.c-filter
+  &__button
+    @include span-columns(12)

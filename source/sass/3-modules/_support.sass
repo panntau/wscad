@@ -1,6 +1,16 @@
 .c-support
+  a
+    color: #000
+    text-decoration: underline
   text-align: center
   &__contact
     list-style-type: none
     display: inline-block
+    &_important
+      font-weight: bold
+    &+&
+      margin-left: $gutter-half
+      &:before
+        content: '|'
+        margin-right: $gutter-half
   &__contacts

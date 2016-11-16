@@ -8,14 +8,17 @@ header.navigation nav
   flex-basis: auto
   flex-grow: 1
   flex-shrink: 0
-  background: $yellow
+  @include background(linear-gradient(left, $white 0%, $white 82.94%, $yellow 82.95%));
 .l-footer
   flex: none
   background: $black
   min-height: 100px
+  text-align: center
 .l-filter
   &__search
     @include span-columns(2)
+    float: right
+    margin-bottom: $gutter-half
 .l-pagination
   clear: both
   margin: $gutter 0
@@ -28,9 +31,14 @@ header.navigation nav
   @include outer-container
   &__top
     @include span-columns(12)
+    clear: both
+    @include display(flex)
+    @include align-content(stretch)  
     /*@include flex-grow(1)  */
     &Right
       @include span-columns(2)
+      background: $yellow
+      padding-left: $gutter-half
       /*@include flex-grow(1)*/
     &Left
       @include span-columns(10)
@@ -38,19 +46,42 @@ header.navigation nav
       /*@include flex-grow(1)*/
   &__bottom
     @include span-columns(12)
-    @include display(flex) 
-    @include align-items(stretch)
+    background: $yellow
+  &__middle
+    clear: both
+    @include display(flex)
+    @include align-content(stretch)  
   &__table
     @include span-columns(10)
     background: $white
     @include flex-grow(1)
-    width: 100%
+    padding: 0 $gutter
   &__actions
     @include span-columns(2)
     @include flex-shrink(0)
+    background: $yellow
+    padding-left: $gutter-half
 .c-mainContent
   /*@include display(flex)*/ 
   /*@include align-items(stretch)*/
   /*@include flex-wrap(wrap)*/
   &__title
     text-align: center
+    
+.c-links
+  @include display(flex)
+  @include justify-content(space-around)
+  @include align-items(center)
+  
+  &__email
+    max-width: 120px
+    &Note
+      text-align: center
+  &__download
+    max-width: 220px
+    &Note
+      text-align: center
+  &__contact
+    max-width: 150px
+    &Note
+      text-align: center

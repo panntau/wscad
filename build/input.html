@@ -1,0 +1,8 @@
+mixin selectWithId(selectId)
+  select#{selectId}
+    option(value="1") value 1
+    option(value="2") value 2
+    option(value="3") value 3
+  
+mixin inputWithId(inputId, inputType)
+  input#{inputId}(type="{inputType}")

@@ -2,7 +2,7 @@
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: #222
+  //color: #222
   font-weight: bold
 
 .gigantic
@@ -49,3 +49,18 @@ hr
   clear: both
   margin: 10px 0 30px
   height: 0
+
+.c-title
+  &_decorated
+    margin-bottom: $gutter
+    position: relative
+    display: inline-block
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -$gutter-half
+      width: 125px
+      max-width: 100%
+      border-bottom: 1px solid $silver
+      margin-top: $gutter-half

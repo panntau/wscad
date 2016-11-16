@@ -55,20 +55,18 @@
       <div class="c-mainContent">
         <div class="l-mainContent__top">
           <div class="l-mainContent__topLeft">
-            <h1 class="c-mainContent__title">
-              <Solution>support center</Solution>
-            </h1>
+            <h1 class="c-mainContent__title"> <span class="c-title_decorated">Solution support center</span></h1>
             <nav class="c-support">
               <ul class="c-support__contacts">
-                <li class="c-support__contact">In case of problems, please contact<span class="c-support__contact_important">Support Hotline</span></li>
-                <li class="c-support__contact"><a href="tel:+49123456789" class="c-support__link c-support__link_phone">+49 123 456 789</a></li>
-                <li class="c-support__contact">                   <a href="mail-to:support@digitalcustomership.de" class="c-support__link c-support__link_email">support@digitalcustomership.de</a></li>
+                <li class="c-support__contact">In case of problems, please contact <span class="c-support__contact_important">Support Hotline</span></li>
+                <li class="c-support__contact">Tel.: <a href="tel:+49123456789" class="c-support__link c-support__link_phone">+49 123 456 789</a></li>
+                <li class="c-support__contact">Email:                     <a href="mail-to:support@digitalcustomership.de" class="c-support__link c-support__link_email">support@digitalcustomership.de</a></li>
               </ul>
             </nav>
           </div>
           <div class="l-mainContent__topRight"></div>
         </div>
-        <div class="l-mainContent__bottom">
+        <div class="l-mainContent__middle">
           <div class="l-mainContent__table"> 
             <div class="c-filter">
               <div class="l-filter__search">
@@ -87,205 +85,79 @@
               <table class="c-dataTable">
                 <thead class="c-dataTable__header">
                   <tr class="c-dataTable__headerTitles">
-                    <th class="c-dataTable__headerCell c-dataTable__contract">Contract</th>
-                    <th class="c-dataTable__headerCell c-dataTable__ticket">Ticket #</th>
-                    <th class="c-dataTable__headerCell c-dataTable__customerTicket">Customer ticket #</th>
-                    <th class="c-dataTable__headerCell c-dataTable__title">Title</th>
-                    <th class="c-dataTable__headerCell c-dataTable__creator">Created by</th>
-                    <th class="c-dataTable__headerCell c-dataTable__status">Status Reason</th>
-                    <th class="c-dataTable__headerCell c-dataTable__priority">Priority</th>
-                    <th class="c-dataTable__headerCell c-dataTable__createdDate">Created on</th>
-                    <th class="c-dataTable__headerCell c-dataTable__modified-closed">Modified on / Closed on</th>
-                    <th class="c-dataTable__headerCell c-dataTable__description">Description</th>
+                    <th class="c-dataTable__headerCell c-dataTable__contract">Contract<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__ticket">Ticket #<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__customerTicket">Customer ticket #<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__title">Title<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__creator">Created by<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__status">Status Reason<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__priority">Priority<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__createdDate">Created on<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__modified-closed">Modified on / Closed on<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
+                    <th class="c-dataTable__headerCell c-dataTable__description">Description<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></th>
                   </tr>
                   <tr class="c-dataTable__headerFilters">
-                    <th class="c-dataTable__headerCell c-dataTable__contract"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__contract">
+                      <select id="contractsFilter">
+                        <option> </option>
+                        <option value="1">value 1</option>
+                        <option value="2">value 2</option>
+                        <option value="3">value 3</option>
+                      </select>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__ticket"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__ticket">
+                      <select id="ticketNumberFilter">
+                        <option> </option>
+                        <option value="1">value 1</option>
+                        <option value="2">value 2</option>
+                        <option value="3">value 3</option>
+                      </select>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__customerTicket"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__customerTicket">
+                      <select id="customerTicketFilter">
+                        <option> </option>
+                        <option value="1">value 1</option>
+                        <option value="2">value 2</option>
+                        <option value="3">value 3</option>
+                      </select>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__title"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__title">
+                      <input id="titleFilter"/>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__creator"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__creator">
+                      <select id="creatorFilter">
+                        <option> </option>
+                        <option value="1">value 1</option>
+                        <option value="2">value 2</option>
+                        <option value="3">value 3</option>
+                      </select>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__status"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__status">
+                      <select id="statusFilter">
+                        <option> </option>
+                        <option value="1">value 1</option>
+                        <option value="2">value 2</option>
+                        <option value="3">value 3</option>
+                      </select>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__priority"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__priority">
+                      <select id="statusFilter">
+                        <option> </option>
+                        <option value="1">value 1</option>
+                        <option value="2">value 2</option>
+                        <option value="3">value 3</option>
+                      </select>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__createdDate"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component--><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__createdDate">
+                      <input id="createDateFilter" class="half"/>
+                      <input id="createTimeFilter" class="half"/>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__modified-closed"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component--><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__modified-closed">
+                      <input id="modifyDateFilter" class="half"/>
+                      <input id="modifyTimeFilter" class="half"/>
                     </th>
-                    <th class="c-dataTable__headerCell c-dataTable__description"><!--START DropDown Component-->
-<div class="dropdown">
-  <div class="dropdown-container">
-    <!--<p class="dropdown-description"> Optional Description</p>
-    -->
-    <p class="dropdown-button">Choose</p>
-    <ul class="dropdown-menu dropdown-select">
-      <li>Dropdown Menu Item</li>
-      <li>Another Item</li>
-      <li>Item Three</li>
-      <li>The Last One</li>
-    </ul>
-  </div>
-</div>
-<!--END DropDown Component-->
+                    <th class="c-dataTable__headerCell c-dataTable__description">
+                      <input id="descriptionFilter"/>
                     </th>
                   </tr>
                 </thead>
@@ -302,19 +174,67 @@
                     <td class="c-dataTable__bodyCell c-dataTable__modified-closed"> 01/11/2016 <span class="c-dataTable__modified-closedTime">14:45:55</span></td>
                     <td class="c-dataTable__bodyCell c-dataTable__description">Description</td>
                   </tr>
+                  <tr class="c-dataTable__item">
+                    <td class="c-dataTable__bodyCell c-dataTable__contract">Test contract</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__ticket">CAS-004456369</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__customerTicket">25668884455565</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__title">PC does not start</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__creator">Martin Bartek</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__status">Status Researching</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__priority">High</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__createdDate">01/11/2016 <span class="c-dataTable__createdTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__modified-closed"> 01/11/2016 <span class="c-dataTable__modified-closedTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__description">Description</td>
+                  </tr>
+                  <tr class="c-dataTable__item">
+                    <td class="c-dataTable__bodyCell c-dataTable__contract">Test contract</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__ticket">CAS-004456369</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__customerTicket">25668884455565</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__title">PC does not start</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__creator">Martin Bartek</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__status">Status Researching</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__priority">High</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__createdDate">01/11/2016 <span class="c-dataTable__createdTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__modified-closed"> 01/11/2016 <span class="c-dataTable__modified-closedTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__description">Description</td>
+                  </tr>
+                  <tr class="c-dataTable__item">
+                    <td class="c-dataTable__bodyCell c-dataTable__contract">Test contract</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__ticket">CAS-004456369</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__customerTicket">25668884455565</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__title">PC does not start</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__creator">Martin Bartek</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__status">Status Researching</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__priority">High</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__createdDate">01/11/2016 <span class="c-dataTable__createdTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__modified-closed"> 01/11/2016 <span class="c-dataTable__modified-closedTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__description">Description</td>
+                  </tr>
+                  <tr class="c-dataTable__item">
+                    <td class="c-dataTable__bodyCell c-dataTable__contract">Test contract</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__ticket">CAS-004456369</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__customerTicket">25668884455565</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__title">PC does not start</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__creator">Martin Bartek</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__status">Status Researching</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__priority">High</td>
+                    <td class="c-dataTable__bodyCell c-dataTable__createdDate">01/11/2016 <span class="c-dataTable__createdTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__modified-closed"> 01/11/2016 <span class="c-dataTable__modified-closedTime">14:45:55</span></td>
+                    <td class="c-dataTable__bodyCell c-dataTable__description">Description</td>
+                  </tr>
                 </tbody>
                 <tfoot>
                   <tr class="c-dataTable__headerTitles">
-                    <th class="c-dataTable__headerCell c-dataTable__contract">Contract</th>
-                    <th class="c-dataTable__headerCell c-dataTable__ticket">Ticket #</th>
-                    <th class="c-dataTable__headerCell c-dataTable__customerTicket">Customer ticket #</th>
-                    <th class="c-dataTable__headerCell c-dataTable__title">Title</th>
-                    <th class="c-dataTable__headerCell c-dataTable__creator">Created by</th>
-                    <th class="c-dataTable__headerCell c-dataTable__status">Status Reason</th>
-                    <th class="c-dataTable__headerCell c-dataTable__priority">Priority</th>
-                    <th class="c-dataTable__headerCell c-dataTable__createdDate">Created on</th>
-                    <th class="c-dataTable__headerCell c-dataTable__modified-closed">Modified on / Closed on</th>
-                    <th class="c-dataTable__headerCell c-dataTable__description">Description</th>
+                    <td class="c-dataTable__footerCell c-dataTable__contract">Contract<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__ticket">Ticket #<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__customerTicket">Customer ticket #<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__title">Title<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__creator">Created by<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__status">Status Reason<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__priority">Priority<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__createdDate">Created on<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__modified-closed">Modified on / Closed on<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
+                    <td class="c-dataTable__footerCell c-dataTable__description">Description<span class="c-sort"><span class="c-sort__up"></span><span class="c-sort__down"></span></span></td>
                   </tr>
                 </tfoot>
               </table>
@@ -322,19 +242,19 @@
             <div class="l-pagination"><!--// START _pagination Component-->
 <div class="pagination">
   <ul>
-    <li class="page-prev"><a href="javascript:void(0)">Prev</a></li>
+    <li class="page-prev"><a href="javascript:void(0)" class="pagination__prev" title="Prev"></a></li>
     <li>
       <ul>
         <li><a href="javascript:void(0)">1</a></li>
-        <li><a href="javascript:void(0)">2</a></li>
+        <li><span class="pagination__separator">...</span></li>
         <li><a href="javascript:void(0)">3</a></li>
         <li><a href="javascript:void(0)">4</a></li>
         <li><a href="javascript:void(0)">5</a></li>
-        <li><a href="javascript:void(0)">6</a></li>
+        <li><span class="pagination__separator">...</span></li>
         <li><a href="javascript:void(0)">7</a></li>
       </ul>
     </li>
-    <li class="page-next"><a href="javascript:void(0)">Next</a></li>
+    <li class="page-next"><a href="javascript:void(0)" class="pagination__next" title="Next"></a></li>
   </ul>
 </div>
 <!--// END _pagination Component-->
@@ -342,20 +262,37 @@
           </div>
           <div class="l-mainContent__actions">
             <div class="c-filter">
-              <button class="c-filter__button">My Case List</button>
-              <button class="c-filter__button">30 Days Old Cases Only</button>
-              <button class="c-filter__button">Reset Filter Criteria</button>
-              <button class="c-filter__button">Refresh Table</button>
-              <button class="c-filter__button c-filter__button_invert">Create Table</button>
+              <button class="button c-filter__button">My Case List</button>
+              <button class="button c-filter__button">30 Days Old Cases Only</button>
+              <button class="button c-filter__button">Reset Filter Criteria</button>
+              <button class="button c-filter__button">Refresh Table</button>
+              <button class="button c-filter__button button_invert">Create Table</button>
             </div>
           </div>
         </div>
       </div>
     </main>
   </div>
+  <div class="l-mainContent__bottom">
+    <div class="l-mainContent">
+      <div class="c-links">
+        <div class="c-links__email">
+          <h3 class="c-links__emailNote">Ich mochte ein Angebot</h3><a class="button c-links__button">Email</a>
+        </div>
+        <div class="c-links__download">
+          <h3 class="c-links__emailNote">Jetzt Demoversion kostenlos testen</h3><a class="button c-links__button">Zum Download</a>
+        </div>
+        <div class="c-links__contact">
+          <h3 class="c-links__contactNote">WSCAD Im Ausland</h3><a class="button c-links__button">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="l-footer">
-    <!-- START _footer Component-->footer
-    <!--img(src="assets/img/fake-footer.jpg")  -->
-    <!-- END _footer Component-->
+    <div class="l-mainContent">
+      <!-- START _footer Component-->footer
+      <!--img(src="assets/img/fake-footer.jpg")  -->
+      <!-- END _footer Component-->
+    </div>
   </footer>
 </body>

@@ -18,18 +18,18 @@ body
       .c-mainContent
         .l-mainContent__top
           .l-mainContent__topLeft
-            h1.c-mainContent__title
-              Solution support center
+            h1.c-mainContent__title 
+              span.c-title_decorated Solution support center
             nav.c-support
               ul.c-support__contacts
-                li.c-support__contact In case of problems, please contact
+                li.c-support__contact In case of problems, please contact 
                   span.c-support__contact_important Support Hotline
-                li.c-support__contact
+                li.c-support__contact Tel.: 
                   a.c-support__link.c-support__link_phone(href="tel:+49123456789") +49 123 456 789
-                li.c-support__contact                    
+                li.c-support__contact Email:                     
                   a.c-support__link.c-support__link_email(href="mail-to:support@digitalcustomership.de") support@digitalcustomership.de
           .l-mainContent__topRight
-        .l-mainContent__bottom
+        .l-mainContent__middle
           .l-mainContent__table  
             .c-filter
               .l-filter__search
@@ -40,72 +40,121 @@ body
                 thead.c-dataTable__header
                   tr.c-dataTable__headerTitles
                     th.c-dataTable__headerCell.c-dataTable__contract Contract
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__ticket Ticket #
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__customerTicket Customer ticket #
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__title Title
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__creator Created by
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__status Status Reason
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__priority Priority
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__createdDate Created on
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__modified-closed Modified on / Closed on
+                      include _sort.jade
                     th.c-dataTable__headerCell.c-dataTable__description Description
+                      include _sort.jade
                   tr.c-dataTable__headerFilters
                     th.c-dataTable__headerCell.c-dataTable__contract
-                      include _dropdown.html
+                      select(id="contractsFilter")
+                        option 
+                        option(value="1") value 1
+                        option(value="2") value 2
+                        option(value="3") value 3
                     th.c-dataTable__headerCell.c-dataTable__ticket
-                      include _dropdown.html
+                      select(id="ticketNumberFilter")
+                        option 
+                        option(value="1") value 1
+                        option(value="2") value 2
+                        option(value="3") value 3
                     th.c-dataTable__headerCell.c-dataTable__customerTicket
-                      include _dropdown.html
+                      select(id="customerTicketFilter")
+                        option 
+                        option(value="1") value 1
+                        option(value="2") value 2
+                        option(value="3") value 3
                     th.c-dataTable__headerCell.c-dataTable__title
-                      include _dropdown.html
+                      input(id="titleFilter")
                     th.c-dataTable__headerCell.c-dataTable__creator
-                      include _dropdown.html
+                      select(id="creatorFilter")
+                        option 
+                        option(value="1") value 1
+                        option(value="2") value 2
+                        option(value="3") value 3
                     th.c-dataTable__headerCell.c-dataTable__status
-                      include _dropdown.html
+                      select(id="statusFilter")
+                        option 
+                        option(value="1") value 1
+                        option(value="2") value 2
+                        option(value="3") value 3
                     th.c-dataTable__headerCell.c-dataTable__priority
-                      include _dropdown.html
+                      select(id="statusFilter")
+                        option 
+                        option(value="1") value 1
+                        option(value="2") value 2
+                        option(value="3") value 3
                     th.c-dataTable__headerCell.c-dataTable__createdDate
-                      include _dropdown.html
-                      include _dropdown.html
+                      input.half(id="createDateFilter")
+                      input.half(id="createTimeFilter")
                     th.c-dataTable__headerCell.c-dataTable__modified-closed
-                      include _dropdown.html
-                      include _dropdown.html
+                      input.half(id="modifyDateFilter")
+                      input.half(id="modifyTimeFilter")
                     th.c-dataTable__headerCell.c-dataTable__description
-                      include _dropdown.html
+                      input(id="descriptionFilter")
                 tbody.c-datatable__body
-                  tr.c-dataTable__item
-                    td.c-dataTable__bodyCell.c-dataTable__contract Test contract
-                    td.c-dataTable__bodyCell.c-dataTable__ticket CAS-004456369
-                    td.c-dataTable__bodyCell.c-dataTable__customerTicket 25668884455565
-                    td.c-dataTable__bodyCell.c-dataTable__title PC does not start
-                    td.c-dataTable__bodyCell.c-dataTable__creator Martin Bartek
-                    td.c-dataTable__bodyCell.c-dataTable__status Status Researching
-                    td.c-dataTable__bodyCell.c-dataTable__priority High
-                    td.c-dataTable__bodyCell.c-dataTable__createdDate 01/11/2016 
-                      span.c-dataTable__createdTime 14:45:55
-                    td.c-dataTable__bodyCell.c-dataTable__modified-closed  01/11/2016 
-                      span.c-dataTable__modified-closedTime 14:45:55
-                    td.c-dataTable__bodyCell.c-dataTable__description Description
+                  include _tableRow.jade
+                  include _tableRow.jade
+                  include _tableRow.jade
+                  include _tableRow.jade
+                  include _tableRow.jade
                 tfoot
                   tr.c-dataTable__headerTitles
-                      th.c-dataTable__headerCell.c-dataTable__contract Contract
-                      th.c-dataTable__headerCell.c-dataTable__ticket Ticket #
-                      th.c-dataTable__headerCell.c-dataTable__customerTicket Customer ticket #
-                      th.c-dataTable__headerCell.c-dataTable__title Title
-                      th.c-dataTable__headerCell.c-dataTable__creator Created by
-                      th.c-dataTable__headerCell.c-dataTable__status Status Reason
-                      th.c-dataTable__headerCell.c-dataTable__priority Priority
-                      th.c-dataTable__headerCell.c-dataTable__createdDate Created on
-                      th.c-dataTable__headerCell.c-dataTable__modified-closed Modified on / Closed on
-                      th.c-dataTable__headerCell.c-dataTable__description Description
+                      td.c-dataTable__footerCell.c-dataTable__contract Contract
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__ticket Ticket #
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__customerTicket Customer ticket #
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__title Title
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__creator Created by
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__status Status Reason
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__priority Priority
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__createdDate Created on
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__modified-closed Modified on / Closed on
+                        include _sort.jade
+                      td.c-dataTable__footerCell.c-dataTable__description Description
+                        include _sort.jade
             .l-pagination
               include _pagination.html
           .l-mainContent__actions
             .c-filter
-              button.c-filter__button My Case List
-              button.c-filter__button 30 Days Old Cases Only
-              button.c-filter__button Reset Filter Criteria
-              button.c-filter__button Refresh Table
-              button.c-filter__button.c-filter__button_invert Create Table
+              button.button.c-filter__button My Case List
+              button.button.c-filter__button 30 Days Old Cases Only
+              button.button.c-filter__button Reset Filter Criteria
+              button.button.c-filter__button Refresh Table
+              button.button.c-filter__button.button_invert Create Table
+  .l-mainContent__bottom
+    .l-mainContent
+      .c-links
+        .c-links__email
+          h3.c-links__emailNote Ich mochte ein Angebot
+          a.button.c-links__button Email
+        .c-links__download
+          h3.c-links__emailNote Jetzt Demoversion kostenlos testen
+          a.button.c-links__button Zum Download
+        .c-links__contact
+          h3.c-links__contactNote WSCAD Im Ausland
+          a.button.c-links__button Kontakt
   footer.l-footer
-    include _footer.jade
+    .l-mainContent
+      include _footer.jade

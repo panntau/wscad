@@ -1,0 +1,11 @@
+.c-sort
+  display: inline-block
+  margin-left: 3px
+  &__up,&__down
+    display: block
+  &__up
+    @include triangle(6px,$gray,up);
+    margin-bottom: 3px
+  &__down
+    margin-right: 3px
+    @include triangle(6px,$gray,down);
