@@ -5,9 +5,12 @@ body
   height: 100vh
 header.navigation nav
 .l-content
-  flex-basis: auto
-  flex-grow: 1
-  flex-shrink: 0
+  @include flex-basis(auto)
+  @include flex-grow(1)
+  @include flex-shrink(0)
+  @include display(flex) 
+  @include align-content(stretch)
+  @include flex-direction(column)
   @include background(linear-gradient(left, $white 0%, $white 82.94%, $yellow 82.95%));
 .l-footer
   flex: none
@@ -16,7 +19,9 @@ header.navigation nav
   text-align: center
 .l-filter
   &__search
-    @include span-columns(2)
+    @media (min-width:1040px)
+      @include span-columns(2)
+      float: right
     float: right
     margin-bottom: $gutter-half
 .l-pagination
@@ -28,7 +33,14 @@ header.navigation nav
 .navigation-wrapper
   @include outer-container
 .l-mainContent
-  @include outer-container
+  @media (min-width:1040px) 
+    @include outer-container
+    @include display(flex) 
+    @include align-content(stretch)
+    @include flex-direction(column)
+    @include flex-grow(1)
+    /*@include flex-wrap(wrap)*/
+  
   &__top
     @include span-columns(12)
     clear: both
@@ -51,6 +63,7 @@ header.navigation nav
     clear: both
     @include display(flex)
     @include align-content(stretch)  
+    @include flex-grow(1)
   &__table
     @include span-columns(10)
     background: $white
@@ -62,9 +75,10 @@ header.navigation nav
     background: $yellow
     padding-left: $gutter-half
 .c-mainContent
-  /*@include display(flex)*/ 
-  /*@include align-items(stretch)*/
-  /*@include flex-wrap(wrap)*/
+  @include flex-grow(1)
+  @include display(flex) 
+  @include align-content(stretch)
+  @include flex-direction(column)
   &__title
     text-align: center
     
