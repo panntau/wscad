@@ -1,16 +1,29 @@
 .c-support
+  text-align: center
   a
     color: #000
     text-decoration: underline
-  text-align: center
   &__contact
     list-style-type: none
-    display: inline-block
+      
+    @include display(flex) 
+    @include align-content(center)
+    @include justify-content(center)
     &_important
       font-weight: bold
+      margin-left: 1ex
     &+&
       margin-left: $gutter-half
       &:before
         content: '|'
         margin-right: $gutter-half
   &__contacts
+    line-height: 45px
+    @media (min-width: 850px)
+      @include display(flex) 
+      @include align-content(center)
+      @include justify-content(center)
+    margin-bottom: 2 * $gutter
+.user__info
+  width: 40px
+  height: 45px

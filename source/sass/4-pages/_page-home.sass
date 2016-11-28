@@ -48,13 +48,13 @@ header.navigation nav
     @include align-content(stretch)  
     /*@include flex-grow(1)  */
     &Right
-      @include span-columns(2)
+      //@include span-columns(2)
       background: $yellow
       padding-left: $gutter-half
       /*@include flex-grow(1)*/
     &Left
-      @include span-columns(10)
-      background: $white
+      @include span-columns(12)
+      //background: $white
       /*@include flex-grow(1)*/
   &__bottom
     @include span-columns(12)
@@ -65,15 +65,12 @@ header.navigation nav
     @include align-content(stretch)  
     @include flex-grow(1)
   &__table
-    @include span-columns(10)
-    background: $white
+    @include span-columns(12)
     @include flex-grow(1)
     padding: 0 $gutter
   &__actions
-    @include span-columns(2)
-    @include flex-shrink(0)
-    background: $yellow
-    padding-left: $gutter-half
+    @include span-columns(12)
+    
 .c-mainContent
   @include flex-grow(1)
   @include display(flex) 

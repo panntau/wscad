@@ -22,7 +22,9 @@ body
               span.c-title_decorated Solution support center
             nav.c-support
               ul.c-support__contacts
-                li.c-support__contact In case of problems, please contact 
+                li.c-support__contact
+                  include svg/businessman.svg
+                  span.c-support__contact_text In case of problems, please contact 
                   span.c-support__contact_important Support Hotline
                 li.c-support__contact Tel.: 
                   a.c-support__link.c-support__link_phone(href="tel:+49123456789") +49 123 456 789
@@ -30,9 +32,14 @@ body
                   a.c-support__link.c-support__link_email(href="mail-to:support@digitalcustomership.de") support@digitalcustomership.de
           .l-mainContent__topRight
         .l-mainContent__middle
-          .l-mainContent__table  
-            .c-filter
-              .l-filter__search
+          .l-mainContent__table
+            .l-mainContent__actions
+              .c-filter
+                button.button.c-filter__button My Case List
+                button.button.c-filter__button 30 Days Old Cases Only
+                button.button.c-filter__button Reset Filter Criteria
+                button.button.c-filter__button Refresh Table
+                button.button.c-filter__button.button_invert Create Table
                 .c-filter__search
                   include _searchBar.jade
             .l-dataTable      
@@ -136,13 +143,7 @@ body
                         include _sort.jade
             .l-pagination
               include _pagination.html
-          .l-mainContent__actions
-            .c-filter
-              button.button.c-filter__button My Case List
-              button.button.c-filter__button 30 Days Old Cases Only
-              button.button.c-filter__button Reset Filter Criteria
-              button.button.c-filter__button Refresh Table
-              button.button.c-filter__button.button_invert Create Table
+          
   footer.l-footer
     .l-mainContent
       include _footer.jade

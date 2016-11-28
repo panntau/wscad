@@ -1,6 +1,7 @@
+$button-height: 38px
 .button
     display: inline-block
-    min-height: 38px
+    min-height: $button-height
     padding: 0 10px
     color: $black
     text-align: center
@@ -19,6 +20,11 @@
     @include display(flex)
     @include align-items(center)
     @include justify-content(center)  
+    margin-left: $gutter-half
+    @media (min-width: 850px)
+      margin-left: 0
+    &+&
+      margin-left: $gutter-half
     &:hover,
     &:active,
     &:focus
@@ -28,7 +34,6 @@
     &_invert
       background: $black
       color: $white
-      margin-top: 3 * $gutter
       &:hover,
       &:active,
       &:focus
@@ -36,5 +41,19 @@
         outline: 0
         background: transparent
 .c-filter
-  &__button
-    @include span-columns(12)
+  @include flex-shrink(0)
+  @include display(flex)
+  @include justify-content(flex-start)
+  @include flex-wrap(wrap)
+  @media (min-width: 850px)
+    @include flex-wrap(nowrap)
+    padding-left: $gutter-half
+  &__search
+    margin-left: $gutter-half
+    @media (min-width: 850px)
+      flex-grow: 1;
+    //@include span-columns(4)
+    float: right
+path.search__icon
+  fill: $black
+  @include size(20)
