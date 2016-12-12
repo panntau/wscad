@@ -1356,8 +1356,8 @@ body {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  background: -webkit-linear-gradient(left, #fff 0%, #fff 82.94%, #FFCC00 82.95%);
-  background: linear-gradient(to right, #fff 0%, #fff 82.94%, #FFCC00 82.95%);
+  background: -webkit-linear-gradient(left, #fff 0%, #fff 66.66%, #FFCC00 66.67%);
+  background: linear-gradient(to right, #fff 0%, #fff 66.66%, #FFCC00 66.67%);
 }
 
 .l-footer {
